@@ -12,5 +12,5 @@ O código desenvolvido realiza requisições HTTP GET via AJAX no referido site,
 A interface visual é interativa e autoexplicativa para escolha dos parâmetros da senha, a qual por padrão sempre poderá conter números, além dos tipos de caracteres selecionados
 pelo usuário.
 
-
+![Randompass](https://user-images.githubusercontent.com/90117229/137609272-c547ab4f-920c-44fe-9f6c-38be32517682.gif)
 
