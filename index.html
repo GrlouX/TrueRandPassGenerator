@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+		<meta charset="UTF-8">
+
+		<title>Gerador de senhas aleatórias</title>
+
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+		<link href="css/styles.css" rel="stylesheet">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="disp/favicon.ico" />
+        
+    </head>
+
+ 	<body>
+
+ 		<h1>Gere sua senha aleatória como um raio</h1>
+ 		<br><br>
+
+ 	<div class="container">
+
+ 	<form action="#" method="post">
+		<fieldset class="grupo">
+            <div class="barra">
+            	<center>Comprimento</center>
+                <input id="comp" name="comp" type="range" value="12" min="4" max="20" oninput="this.nextElementSibling.value = this.value">
+                <output id="comp-disp">12</output>   
+            </div><br>
+
+        	<div class="check-box">
+        		<input type="checkbox" id="letras_min" name="opc_check">
+  				<label for="letras_min">Contém letras minúsculas?</label>
+  			</div>
+
+  			<div class="check-box">
+  				<input type="checkbox" id="letras_mai" name="opc_check">
+  				<label for="letras_mai">Contém letras maiúsculas?</label>
+			</div>
+
+			<div class="check-box">
+  				<input type="checkbox" id="carac_especiais" name="opc_check">
+  				<label for="carac_especiais">Contém caracteres especiais?</label>
+  			</div>
+        </div>
+
+        <div class="btn-group">
+        	<button id="gerar" type="button" class="btn btn-secondary">Gerar Senha</button>
+        </div>
+
+    	</fieldset>
+	</form>
+                        
+	</div>
+
+    <div class="about-us small-12 columns no-padding small-centered inline">
+
+            <div class="global-page-container">
+                <div id="about-us" class="section-title small-12 columns no-padding">
+                <hr></hr>
+            	<img src="disp/white_dice.png" alt="The randomness doesn't play dice" width="128" height="128"/>
+            </div>
+
+            <div id="senha">
+                <h3>A senha será gerada aqui</h3>
+            </div>
+
+            <div id='loadingmsg' style='display:none'>
+  				<p><img src='disp/Lightning.gif' alt="Lightning generator" /></p>
+			</div>
+
+    </div>
+
+    	<script src="js/jquery.js"></script>
+     	<script src="js/scripts.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+       
+    </body>
+
+</html>
