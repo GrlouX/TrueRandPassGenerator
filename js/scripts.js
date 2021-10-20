@@ -10,7 +10,7 @@ $(function(){
 
     let caresp = $("input#carac_especiais");
 
-    // Mapeamento dos caracteres da senha pela tabela ASCII
+    // Mapeamento dos caracteres da senha pela tabela ASCII. Para incrementar a segurança das senhas geradas, recomenda-se permutar os caracteres de mesmo tipo na máquina local.
 
     let corrASCII = {
         "33": "!",
