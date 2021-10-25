@@ -1,0 +1,95 @@
+/* Para tablets */
+
+@media only screen and (max-width: 768px) {
+
+	body {
+		line-height: 1;
+		font-weight: 600;
+	}
+
+	fieldset.group .bar {
+	    width: 90%;
+	    margin: 0px auto;
+	}
+
+	.check-box {
+  		width: 50%;
+  		display: inline-block;
+  		margin: auto;
+  		height: 60%; 
+	}
+
+	.container {
+		padding-right: 10px;
+	    padding-left: 10px;
+	    margin-right: auto;
+	    margin-left: auto;
+    }
+   
+    .global-page-container {
+    	height: 50%;
+        width: 70%;
+    }
+
+	img {
+	    position: absolute;
+	    top: 75%;
+	    left: 40%;
+	    margin-left: -(X/2)px;
+	    margin-top: -(Y/2)px;
+	}
+
+}
+
+/* Para smartphones */
+
+@media only screen and (max-width: 480px) {
+
+	.h2, h2 {
+    	font-size: 1.5rem;
+	}
+
+	.h3, h3 {
+    	font-size: 1.25rem;
+	}
+
+	body {
+	    line-height: 0.9;
+	    font-weight: 500;
+	}
+
+	fieldset.group .bar {
+	    width: 95%;
+	    margin: 0px auto;
+	}	
+
+	.check-box {
+  		width: 30%;
+  		display: inline-block;
+  		margin: auto;
+  		height: 30%; 
+	}
+
+	.container {
+	    padding-right: 5px;
+	    padding-left: 5px;
+	    margin-right: auto;
+	    margin-left: auto;
+    }
+   
+    .global-page-container {
+    	display: block;
+    	height: 40%;
+        width: 90%;
+        font-size: 10px;
+    }
+
+	img {
+	    position: absolute;
+	    top: 70%;
+	    left: 30%;
+	    margin-left: -(X/2)px;
+	    margin-top: -(Y/2)px;
+	}
+
+}

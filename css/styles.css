@@ -6,7 +6,7 @@
 
 body{
     text-align: center;
-    background:#A1B2C3;
+    background:#B2A1C9;
 }
 
 a:hover{
@@ -24,16 +24,16 @@ input, select, textarea, button {
     font-size: 1em;
 }
 
-.grupo:before, .grupo:after {
+.group:before, .group:after {
     content: " ";
     display: table;
 }
 
-.grupo:after {
+.group:after {
     clear: both;
 }
 
-fieldset.grupo .barra {
+fieldset.group .bar {
     width: 50%; 
     margin: 0px auto;
 }
@@ -51,14 +51,14 @@ fieldset.grupo .barra {
     border: 0;
     margin-top: 1em;
     margin-bottom: 1em;
-    color: #FFF;
+    color: #DEF;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 .btn:hover {
-    background: #FB0;
+    background: #DA3;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
@@ -67,45 +67,32 @@ fieldset.grupo .barra {
     cursor: pointer;
 }
 
-@keyframes rotating {
-    from {
-        -ms-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    to {
-        -ms-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-    
-.rotating {
-    -webkit-animation: rotating 0.7s linear infinite;
-    -moz-animation: rotating 0.7s linear infinite;
-    -ms-animation: rotating 0.7s linear infinite;
-    -o-animation: rotating 0.7s linear infinite;
-    animation: rotating 0.7s linear infinite;
-}
-
 .global-page-container {
   width: 100%;
   display: inline-block;
   margin: auto;
-  height: 100%; 
-}
+  height: 100%;
+  text-align: center;
+ }
 
 .global-page-container img {
-    display: block;
-    max-width:128px;
-    max-height:128px;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  max-width:128px;
+  max-height:128px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.pass {
+  text-align: center;
+  color: #424143;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/* Para computadores */
 
 @media only screen and (min-width: 1441px) {
    
@@ -114,23 +101,6 @@ fieldset.grupo .barra {
     }
 
 }
-
-.about-us {
-  text-align: center; }
-  .about-us img {
-    float: right;
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-    margin-bottom: 12px; }
-  .about-us .about-us-text {
-    text-align: left; }
-    .about-us .about-us-text p {
-      color: #424143;
-      font-family: 'Lato', sans-serif;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 28px; }
 
 img {
     position: absolute;

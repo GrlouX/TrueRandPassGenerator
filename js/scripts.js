@@ -10,7 +10,7 @@ $(function(){
 
     let caresp = $("input#carac_especiais");
 
-    // Mapeamento dos caracteres da senha pela tabela ASCII
+    // Mapeamento dos caracteres da senha pela tabela ASCII. Recomenda-se permutar os caracteres de mesmo tipo na máquina local.
 
     let corrASCII = {
         "33": "!",
@@ -114,19 +114,25 @@ $(function(){
         // Parâmetros básicos para uso no AJAX
         var par = [comp,min,max];
 
+        var som = document.getElementById("thunder");
+
+        $('#loading-msg').show();
+        som.play();
+
         // Requisição HTTP GET ao gerador de números inteiros aleatórios do site random.org
-        $('#loadingmsg').show();
         $.ajax({
             "type": "GET",
             "url": "https://www.random.org/integers/?num=" + par[0] + "&min=" + par[1] + "&max=" + par[2] + "&col=1&base=10&format=plain&rnd=new", 
             "success": function(data){
                 var resp = data;
-                $('#loadingmsg').hide();
+                $('#loading-msg').hide();
+                som.pause();
                 construirSenha(resp,corrASCII);
             },
             "error": function(){
                 $("#senha").html("Falha na requisição");
-                $('#loadingmsg').hide();
+                $('#loading-msg').hide();
+                som.pause();
             }   
         });
 
